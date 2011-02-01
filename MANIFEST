@@ -1,3 +1,4 @@
+Changes
 LICENSE
 MANIFEST
 META.yml
@@ -19,5 +20,9 @@ somelib/lib/MyApp/Example.pm
 somelib/lib/SomeLib.pm
 somelib/pod/simple-example.pod
 somelib/pod/somelib-example.pod
+t/00-loads.t
+t/01-simple-things.t
+t/data/pod/simple-things.pod
+t/data/scripts/well-documented-script
 t/somelib-example
 weaver.ini

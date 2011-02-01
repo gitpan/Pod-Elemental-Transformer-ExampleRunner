@@ -11,7 +11,10 @@ use ExtUtils::MakeMaker 6.31;
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'include/run examples scripts in your documentation without copy/paste',
   'AUTHOR' => 'FOOLISH <FOOLISH@cpan.org>',
-  'BUILD_REQUIRES' => {},
+  'BUILD_REQUIRES' => {
+    'Pod::Elemental' => '0',
+    'Test::More' => '0'
+  },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
   },
@@ -27,9 +30,9 @@ my %WriteMakefileArgs = (
     'Pod::Elemental::Types' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.001',
+  'VERSION' => '0.002',
   'test' => {
-    'TESTS' => ''
+    'TESTS' => 't/*.t'
   }
 );
 

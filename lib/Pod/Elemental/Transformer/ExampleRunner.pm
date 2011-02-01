@@ -1,6 +1,6 @@
 package Pod::Elemental::Transformer::ExampleRunner;
 BEGIN {
-  $Pod::Elemental::Transformer::ExampleRunner::VERSION = '0.001';
+  $Pod::Elemental::Transformer::ExampleRunner::VERSION = '0.002';
 }
 # ABSTRACT: include/run examples scripts in your documentation without copy/paste
 use Moose;
@@ -161,10 +161,9 @@ sub remove_yadas_from {
     $source 
 }
 
-1
+1;
 
-
-
+__END__
 =pod
 
 =head1 NAME
@@ -173,7 +172,7 @@ Pod::Elemental::Transformer::ExampleRunner - include/run examples scripts in you
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -509,11 +508,4 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-
-# maybe your scripts could produce POD? that might be cool...
-# =example source pod-example-list
-# =example run pod-example-list
 

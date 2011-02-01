@@ -2,7 +2,9 @@
 abstract: 'include/run examples scripts in your documentation without copy/paste'
 author:
   - 'FOOLISH <FOOLISH@cpan.org>'
-build_requires: {}
+build_requires:
+  Pod::Elemental: 0
+  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
@@ -19,4 +21,4 @@ requires:
   Pod::Elemental::Transformer: 0.101620
   Pod::Elemental::Types: 0
   namespace::autoclean: 0
-version: 0.001
+version: 0.002
